@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif}
+    .bg{fill:#061426}
+    .frame{fill:none;stroke:#1b5b93;stroke-width:1.4;opacity:.85}
+    .title{fill:#e6f5ff;font-size:17px;text-anchor:middle;letter-spacing:2px}
+    .sect{fill:#dceeff;font-size:16px;letter-spacing:1.5px}
+    .sline{stroke:#3f9fdc;stroke-width:1.2}
+    .stl{fill:#8fb0d6;font-size:11px}
+    .stv{font-size:17px;font-weight:700}
+    .card{fill:#0b2340;stroke:#2f7fc4;stroke-width:1}
+    .cicon{fill:#123c68;stroke:#43a9f0;stroke-width:1.2}
+    .clab{fill:#cfe4ff;font-size:11px;text-anchor:middle}
+    .pane{fill:#0b2340;stroke:#2f7fc4;stroke-width:1}
+    .pt{fill:#d6ebff;font-size:13px;letter-spacing:1px}
+    .th{fill:#12406f;stroke:#2f7fc4;stroke-width:.8}
+    .tht{fill:#e2f0ff;font-size:11px;text-anchor:middle}
+    .rt{font-size:10px;fill:#d5e8ff}
+    .desc{font-size:9.5px;fill:#bcd6f2}
+    .chipt{font-size:9.5px;fill:#ffe9d6;text-anchor:middle}
+    .lv{stroke:#2a6ea8;stroke-width:.8}
+    .lg{fill:#bdd6f0;font-size:10px}
+    .foot{fill:#6f8fae;font-size:10px}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1280" height="720" rx="6"/>
+  <rect class="frame" x="7" y="7" width="1266" height="706" rx="4"/>
+
+  <!-- 顶部标题栏 -->
+  <circle cx="48" cy="48" r="19" fill="#0d2f57" stroke="#43d9ff" stroke-width="1.3"/>
+  <path d="M53 40l-7 8 7 8" fill="none" stroke="#9fe4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M470 24h340l30 22-30 22H470l-30-22z" fill="#0d2f57" stroke="#43d9ff" stroke-width="1.4"/>
+  <text class="title" x="640" y="53">高速公路机电系统运行状态智能监测系统</text>
+  <line x1="92" y1="46" x2="430" y2="46" stroke="#1f6ea8" stroke-width="1.2" stroke-dasharray="7 5"/>
+  <line x1="850" y1="46" x2="1050" y2="46" stroke="#1f6ea8" stroke-width="1.2" stroke-dasharray="7 5"/>
+  <rect x="1062" y="34" width="118" height="28" rx="3" fill="#0d2f57" stroke="#3f9fdc" stroke-width="1"/>
+  <text x="1121" y="53" text-anchor="middle" fill="#a9efff" font-size="12">总览大屏 ›</text>
+  <text x="1230" y="42" text-anchor="end" fill="#9fe4ff" font-size="15">22:25:03</text>
+  <text x="1230" y="58" text-anchor="end" fill="#6f8fae" font-size="9">2026-10-15 星期四</text>
+
+  <!-- 分区标题栏 -->
+  <circle cx="52" cy="124" r="24" fill="none" stroke="#2f7fc4" stroke-width="2.4" stroke-dasharray="98 60"/>
+  <circle cx="52" cy="124" r="24" fill="none" stroke="#ff8a3c" stroke-width="2.4" stroke-dasharray="46 152"/>
+  <circle cx="52" cy="124" r="9" fill="none" stroke="#43d9ff" stroke-width="2"/>
+  <text class="sect" x="96" y="130">所有告警</text>
+  <line class="sline" x1="210" y1="124" x2="660" y2="124"/>
+  <g>
+    <text class="stl" x="678" y="130">设备总数</text><text class="stv" x="735" y="130" fill="#43d9ff">1,081</text>
+    <text class="stl" x="798" y="130">告警条目</text><text class="stv" x="855" y="130" fill="#ff4a5f">208</text>
+    <text class="stl" x="910" y="130">涉及类别</text><text class="stv" x="967" y="130" fill="#8d6bff">10</text>
+    <text class="stl" x="1000" y="130">告警率</text><text class="stv" x="1048" y="130" fill="#ff8b34" font-size="15">16.74%</text>
+  </g>
+  <rect x="1130" y="110" width="66" height="28" rx="3" fill="#12406f" stroke="#3f9fdc" stroke-width="1"/>
+  <text x="1163" y="129" text-anchor="middle" fill="#eaf7ff" font-size="11">所有告警</text>
+  <rect x="1196" y="110" width="66" height="28" rx="3" fill="#0b2340" stroke="#3f9fdc" stroke-width="1"/>
+  <text x="1229" y="129" text-anchor="middle" fill="#a9c8e8" font-size="11">当前告警</text>
+
+  <!-- 设备告警卡片网格：7 列 × 4 行 -->
+  <g>
+    <!-- 第 1 行 -->
+    <rect class="card" x="24" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="66" cy="194" r="21"/><text x="112" y="200" font-size="22" font-weight="700" fill="#ff3b4e">3</text><text class="clab" x="112" y="236">交换机</text>
+    <rect class="card" x="204" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="246" cy="194" r="21"/><text x="292" y="200" font-size="22" font-weight="700" fill="#ff3b4e">3</text><text class="clab" x="292" y="236">隧道火灾设备</text>
+    <rect class="card" x="384" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="426" cy="194" r="21"/><text x="472" y="200" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="472" y="236">电话和广播</text>
+    <rect class="card" x="564" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="606" cy="194" r="21"/><text x="652" y="200" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="652" y="236">NVR</text>
+    <rect class="card" x="744" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="786" cy="194" r="21"/><text x="832" y="200" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="832" y="236">摄像机</text>
+    <rect class="card" x="924" y="158" width="160" height="86" rx="4"/><circle class="cicon" cx="966" cy="194" r="21"/><text x="1012" y="200" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="1012" y="236">采集服务状态</text>
+    <rect class="card" x="1104" y="158" width="152" height="86" rx="4"/><circle class="cicon" cx="1146" cy="194" r="21"/><text x="1192" y="200" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="1180" y="236">情报板</text>
+
+    <!-- 第 2 行 -->
+    <rect class="card" x="24" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="66" cy="294" r="21"/><text x="112" y="300" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="112" y="336">动环监控</text>
+    <rect class="card" x="204" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="246" cy="294" r="21"/><text x="292" y="300" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="292" y="336">隧道PLC</text>
+    <rect class="card" x="384" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="426" cy="294" r="21"/><text x="472" y="300" font-size="22" font-weight="700" fill="#ff3b4e">28</text><text class="clab" x="472" y="336">隧道消防</text>
+    <rect class="card" x="564" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="606" cy="294" r="21"/><text x="652" y="300" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="652" y="336">收费站网络质量监测</text>
+    <rect class="card" x="744" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="786" cy="294" r="21"/><text x="832" y="300" font-size="22" font-weight="700" fill="#ff3b4e">36</text><text class="clab" x="832" y="336">收费站车道监测</text>
+    <rect class="card" x="924" y="258" width="160" height="86" rx="4"/><circle class="cicon" cx="966" cy="294" r="21"/><text x="1012" y="300" font-size="22" font-weight="700" fill="#ff3b4e">19</text><text class="clab" x="1012" y="336">门架监测</text>
+    <rect class="card" x="1104" y="258" width="152" height="86" rx="4"/><circle class="cicon" cx="1146" cy="294" r="21"/><text x="1192" y="300" font-size="22" font-weight="700" fill="#ff3b4e">91</text><text class="clab" x="1180" y="336">隧道风机</text>
+
+    <!-- 第 3 行 -->
+    <rect class="card" x="24" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="66" cy="394" r="21"/><text x="112" y="400" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="112" y="436">隧道照明</text>
+    <rect class="card" x="204" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="246" cy="394" r="21"/><text x="292" y="400" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="292" y="436">Linux服务器</text>
+    <rect class="card" x="384" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="426" cy="394" r="21"/><text x="472" y="400" font-size="22" font-weight="700" fill="#ff3b4e">1</text><text class="clab" x="472" y="436">软件进程端口</text>
+    <rect class="card" x="564" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="606" cy="394" r="21"/><text x="652" y="400" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="652" y="436">隧道车道指示灯</text>
+    <rect class="card" x="744" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="786" cy="394" r="21"/><text x="832" y="400" font-size="22" font-weight="700" fill="#23d97d">0</text><text class="clab" x="832" y="436">隧道交通灯</text>
+    <rect class="card" x="924" y="358" width="160" height="86" rx="4"/><circle class="cicon" cx="966" cy="394" r="21"/><text x="1012" y="400" font-size="22" font-weight="700" fill="#ff3b4e">14</text><text class="clab" x="1012" y="436">卷帘门</text>
+    <rect class="card" x="1104" y="358" width="152" height="86" rx="4"/><circle class="cicon" cx="1146" cy="394" r="21"/><text x="1192" y="400" font-size="22" font-weight="700" fill="#ff3b4e">12</text><text class="clab" x="1180" y="436">电力监控</text>
+
+    <!-- 第 4 行 -->
+    <rect class="card" x="24" y="458" width="160" height="86" rx="4"/><circle class="cicon" cx="66" cy="494" r="21"/><text x="112" y="500" font-size="22" font-weight="700" fill="#ff3b4e">1</text><text class="clab" x="112" y="536">Windows服务器</text>
+  </g>
+
+  <!-- 左下：当前确认告警数占比 -->
+  <rect class="pane" x="24" y="556" width="300" height="144"/>
+  <text class="pt" x="42" y="578">当前确认告警数占比</text>
+  <g transform="translate(150 636)">
+    <circle r="52" fill="#8f3a86"/>
+    <path d="M0 0 L0 -52 A52 52 0 0 1 49.5 16 Z" fill="#2f5fbf"/>
+    <path d="M0 0 L49.5 16 A52 52 0 0 1 18.3 48.7 Z" fill="#1f8f8f"/>
+    <path d="M0 0 L18.3 48.7 A52 52 0 0 1 -18.3 48.7 Z" fill="#3f7fa8"/>
+  </g>
+  <text class="lg" x="210" y="628">重要告警 24%</text>
+  <text class="lg" x="44" y="614">普通告警 61%</text>
+  <text class="lg" x="44" y="676">紧急 10% · 提示 5%</text>
+
+  <!-- 右下：当前告警列表 -->
+  <rect class="pane" x="344" y="556" width="912" height="144"/>
+  <text class="pt" x="800" y="578" text-anchor="middle">当前告警列表</text>
+  <rect class="th" x="356" y="590" width="888" height="24"/>
+  <text class="tht" x="374" y="606">序号</text>
+  <text class="tht" x="482" y="606">告警名称</text>
+  <text class="tht" x="656" y="606">告警设备</text>
+  <text class="tht" x="900" y="606">告警描述</text>
+  <text class="tht" x="1074" y="606">告警等级</text>
+  <text class="tht" x="1180" y="606">告警时长</text>
+  <line class="lv" x1="392" y1="590" x2="392" y2="614"/><line class="lv" x1="572" y1="590" x2="572" y2="614"/>
+  <line class="lv" x1="740" y1="590" x2="740" y2="614"/><line class="lv" x1="1060" y1="590" x2="1060" y2="614"/>
+  <line class="lv" x1="1088" y1="590" x2="1088" y2="614"/><line class="lv" x1="1140" y1="590" x2="1140" y2="614"/>
+  <g>
+    <rect x="356" y="614" width="888" height="31" fill="#123a63"/>
+    <text class="rt" x="374" y="634">1</text><text class="rt" x="452" y="634">Nvr_时间偏差告警</text><text class="rt" x="620" y="634">研发设计部nvr</text>
+    <text class="desc" x="748" y="634">录像机研发设计部nvr 时间偏差大于一分钟</text>
+    <rect x="1064" y="622" width="44" height="15" rx="2" fill="#c85a1c"/><text class="chipt" x="1086" y="633">重要</text><text class="rt" x="1150" y="634">5小时6分35秒</text>
+    <rect x="356" y="645" width="888" height="31" fill="#10335a"/>
+    <text class="rt" x="374" y="665">2</text><text class="rt" x="452" y="665">Nvr_时间偏差告警</text><text class="rt" x="620" y="665">研发设计部nvr2</text>
+    <text class="desc" x="748" y="665">录像机研发设计部nvr2 时间偏差大于一分钟</text>
+    <rect x="1064" y="653" width="44" height="15" rx="2" fill="#c85a1c"/><text class="chipt" x="1086" y="664">重要</text><text class="rt" x="1150" y="665">5小时6分35秒</text>
+    <rect x="356" y="676" width="888" height="31" fill="#123a63"/>
+    <text class="rt" x="374" y="696">3</text><text class="rt" x="452" y="696">进程未运行告警</text><text class="rt" x="620" y="696">陆运一体化主机</text>
+    <text class="desc" x="748" y="696">主机路运一体化主机进程报警服务未运行</text>
+    <rect x="1064" y="684" width="44" height="15" rx="2" fill="#26699f"/><text class="chipt" x="1086" y="695">普通</text><text class="rt" x="1150" y="696">5小时5分17秒</text>
+  </g>
+
+  <text class="foot" x="24" y="712">卡片数量 &gt; 0 显示红色、正常显示绿色；列表可滚动，新告警从顶部插入并高亮；「所有告警 / 当前告警」可切换筛选</text>
+</svg>

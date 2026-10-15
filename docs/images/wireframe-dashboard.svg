@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <style>
+    text{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif}
+    .bg{fill:#061426}
+    .frame{fill:none;stroke:#1b5b93;stroke-width:1.4;opacity:.85}
+    .panel{fill:#0b2340;stroke:#2f7fc4;stroke-width:1.1}
+    .pt{fill:#cfe9ff;font-size:13.5px;text-anchor:middle;letter-spacing:1px}
+    .pl{stroke:#2a6ea8;stroke-width:.9}
+    .kl{fill:#9fc2e4;font-size:13px}
+    .kv{font-size:26px;font-weight:700}
+    .lab{fill:#a8c8ea;font-size:10.5px;text-anchor:end}
+    .val{fill:#43f0a0;font-size:10.5px}
+    .valc{fill:#ff8a3c;font-size:10px}
+    .valw{fill:#ffb27a;font-size:10px}
+    .track{fill:#0d2b4c;stroke:#245f96;stroke-width:.8}
+    .fillg{fill:#1ec97a}
+    .fillr{fill:#d92b3e}
+    .fillw{fill:#d8462a}
+    .node{fill:#0e3057;stroke:#43a9f0;stroke-width:1}
+    .nlab{fill:#bcd8f4;font-size:10px;text-anchor:middle}
+    .link{stroke:#3f9fdc;stroke-width:1;stroke-dasharray:4 4;fill:none;opacity:.85}
+    .th{fill:#12406f;stroke:#2f7fc4;stroke-width:.8}
+    .tht{fill:#e2f0ff;font-size:10.5px;text-anchor:middle}
+    .rt{font-size:9.5px;fill:#d5e8ff}
+    .rowU{fill:#7d1b23}
+    .rowM{fill:#8a4310}
+    .rowN{fill:#123a63}
+    .chipt{font-size:9px;fill:#ffe9d6;text-anchor:middle}
+    .ax{fill:#6f8fae;font-size:8px;text-anchor:middle}
+    .axl{stroke:#22609a;stroke-width:.8}
+    .foot{fill:#6f8fae;font-size:10.5px}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1280" height="720" rx="6"/>
+  <rect class="frame" x="7" y="7" width="1266" height="706" rx="4"/>
+
+  <!-- 标题栏 -->
+  <path d="M560 20h160l32 22-32 22H560l-32-22z" fill="#0d2f57" stroke="#43d9ff" stroke-width="1.4"/>
+  <text x="640" y="49" text-anchor="middle" fill="#e6f5ff" font-size="18" letter-spacing="3">状态监测系统视图大屏</text>
+  <line x1="48" y1="42" x2="516" y2="42" stroke="#1f6ea8" stroke-width="1.2" stroke-dasharray="7 5"/>
+  <line x1="764" y1="42" x2="1232" y2="42" stroke="#1f6ea8" stroke-width="1.2" stroke-dasharray="7 5"/>
+
+  <!-- KPI -->
+  <text class="kl" x="24" y="96">总设备数：</text>
+  <text class="kv" x="112" y="98" fill="#43d9ff">1081</text>
+  <text class="kl" x="336" y="96">正常设备数：</text>
+  <text class="kv" x="440" y="98" fill="#25e08a">1024</text>
+  <text class="kl" x="648" y="96">告警设备数：</text>
+  <text class="kv" x="752" y="98" fill="#ff4a5f">181</text>
+  <text class="kl" x="960" y="96">告警率：</text>
+  <text class="kv" x="1034" y="98" fill="#43d9ff">16.74%</text>
+  <line x1="326" y1="74" x2="326" y2="106" class="pl"/>
+  <line x1="638" y1="74" x2="638" y2="106" class="pl"/>
+  <line x1="950" y1="74" x2="950" y2="106" class="pl"/>
+
+  <!-- 左列：设备健康度 -->
+  <rect class="panel" x="24" y="116" width="300" height="232"/>
+  <text class="pt" x="174" y="136">设备健康度</text>
+  <line x1="60" y1="146" x2="288" y2="146" stroke="#2a6ea8" stroke-width=".7"/>
+  <g>
+    <text class="lab" x="86" y="158">交换机</text><rect class="track" x="92" y="150" width="158" height="8"/><rect class="fillg" x="92" y="150" width="158" height="8"/><text class="val" x="256" y="158">100%</text>
+    <text class="lab" x="86" y="178">隧道PLC</text><rect class="track" x="92" y="170" width="158" height="8"/><rect class="fillg" x="92" y="170" width="148.5" height="8"/><text class="val" x="256" y="178">94%</text>
+    <text class="lab" x="86" y="198">隧道火大</text><rect class="track" x="92" y="190" width="158" height="8"/><rect class="fillg" x="92" y="190" width="148.5" height="8"/><text class="val" x="256" y="198">94%</text>
+    <text class="lab" x="86" y="218">电话广播</text><rect class="track" x="92" y="210" width="158" height="8"/><rect class="fillg" x="92" y="210" width="150.6" height="8"/><text class="val" x="256" y="218">95.3%</text>
+    <text class="lab" x="86" y="238">NVR</text><rect class="track" x="92" y="230" width="158" height="8"/><rect class="fillg" x="92" y="230" width="150.2" height="8"/><text class="val" x="256" y="238">95.1%</text>
+    <text class="lab" x="86" y="258">情报板</text><rect class="track" x="92" y="250" width="158" height="8"/><rect class="fillg" x="92" y="250" width="151.7" height="8"/><text class="val" x="256" y="258">96%</text>
+    <text class="lab" x="86" y="278">服务器</text><rect class="track" x="92" y="270" width="158" height="8"/><rect class="fillg" x="92" y="270" width="158" height="8"/><text class="val" x="256" y="278">100%</text>
+    <text class="lab" x="86" y="298">摄像机</text><rect class="track" x="92" y="290" width="158" height="8"/><rect class="fillg" x="92" y="290" width="145.8" height="8"/><text class="val" x="256" y="298">92.3%</text>
+    <text class="lab" x="86" y="318">电力监控</text><rect class="track" x="92" y="310" width="158" height="8"/><rect class="fillg" x="92" y="310" width="150.1" height="8"/><text class="val" x="256" y="318">95%</text>
+  </g>
+  <text class="lab" x="86" y="338">对讲终端</text><rect class="track" x="92" y="330" width="158" height="8"/><rect class="fillg" x="92" y="330" width="150.1" height="8"/><text class="val" x="256" y="338">95%</text>
+
+  <!-- 左列：设备分类数量图 -->
+  <rect class="panel" x="24" y="358" width="300" height="238"/>
+  <text class="pt" x="174" y="378">设备分类数量图</text>
+  <line x1="60" y1="388" x2="288" y2="388" stroke="#2a6ea8" stroke-width=".7"/>
+  <g>
+    <text class="lab" x="86" y="404">交换机</text><rect class="track" x="92" y="398" width="140" height="7"/><rect class="fillr" x="92" y="398" width="1.1" height="7"/><text class="valc" x="238" y="404">9</text>
+    <text class="lab" x="86" y="423">隧道PLC</text><rect class="track" x="92" y="417" width="140" height="7"/><rect class="fillr" x="92" y="417" width="35.4" height="7"/><text class="valc" x="238" y="423">303</text>
+    <text class="lab" x="86" y="442">隧道火大</text><rect class="track" x="92" y="436" width="140" height="7"/><rect class="fillr" x="92" y="436" width="120.6" height="7"/><text class="valc" x="238" y="442">1034</text>
+    <text class="lab" x="86" y="461">电话广播</text><rect class="track" x="92" y="455" width="140" height="7"/><rect class="fillr" x="92" y="455" width="38.3" height="7"/><text class="valc" x="238" y="461">328</text>
+    <text class="lab" x="86" y="480">NVR</text><rect class="track" x="92" y="474" width="140" height="7"/><rect class="fillr" x="92" y="474" width="5" height="7"/><text class="valc" x="238" y="480">43</text>
+    <text class="lab" x="86" y="499">情报板</text><rect class="track" x="92" y="493" width="140" height="7"/><rect class="fillr" x="92" y="493" width="5.8" height="7"/><text class="valc" x="238" y="499">50</text>
+    <text class="lab" x="86" y="518">服务器</text><rect class="track" x="92" y="512" width="140" height="7"/><rect class="fillr" x="92" y="512" width="1" height="7"/><text class="valc" x="238" y="518">4</text>
+    <text class="lab" x="86" y="537">摄像机</text><rect class="track" x="92" y="531" width="140" height="7"/><rect class="fillr" x="92" y="531" width="69.9" height="7"/><text class="valc" x="238" y="537">599</text>
+    <text class="lab" x="86" y="556">电力监控</text><rect class="track" x="92" y="550" width="140" height="7"/><rect class="fillr" x="92" y="550" width="7.7" height="7"/><text class="valc" x="238" y="556">66</text>
+    <text class="lab" x="86" y="575">对讲终端</text><rect class="track" x="92" y="569" width="140" height="7"/><rect class="fillr" x="92" y="569" width="5.6" height="7"/><text class="valc" x="238" y="575">48</text>
+  </g>
+  <line class="axl" x1="92" y1="584" x2="232" y2="584"/>
+  <text class="ax" x="92" y="594">0</text><text class="ax" x="115" y="594">200</text><text class="ax" x="139" y="594">400</text><text class="ax" x="162" y="594">600</text><text class="ax" x="185" y="594">800</text><text class="ax" x="209" y="594">1000</text><text class="ax" x="232" y="594">1200</text>
+
+  <!-- 中列：网络拓扑 -->
+  <rect class="panel" x="336" y="116" width="632" height="262"/>
+  <text class="pt" x="652" y="136">新博高速监控网</text>
+  <line class="link" x1="456" y1="188" x2="472" y2="188"/>
+  <line class="link" x1="582" y1="188" x2="596" y2="188"/>
+  <line class="link" x1="706" y1="188" x2="720" y2="188"/>
+  <line class="link" x1="408" y1="210" x2="420" y2="232"/>
+  <line class="link" x1="527" y1="210" x2="520" y2="232"/>
+  <line class="link" x1="651" y1="210" x2="636" y2="232"/>
+  <line class="link" x1="770" y1="210" x2="862" y2="232"/>
+  <line class="link" x1="522" y1="272" x2="470" y2="296"/>
+  <line class="link" x1="636" y1="272" x2="606" y2="296"/>
+  <line class="link" x1="750" y1="272" x2="744" y2="296"/>
+  <line class="link" x1="862" y1="272" x2="882" y2="296"/>
+  <line class="link" x1="572" y1="252" x2="586" y2="252"/>
+  <line class="link" x1="686" y1="252" x2="700" y2="252"/>
+  <g>
+    <rect class="node" x="360" y="166" width="96" height="44" rx="3"/><text class="nlab" x="408" y="192">云端数据存储</text>
+    <rect class="node" x="472" y="166" width="110" height="44" rx="3"/><text class="nlab" x="527" y="192">省中心服务器</text>
+    <rect class="node" x="596" y="166" width="110" height="44" rx="3"/><text class="nlab" x="651" y="192">路段中心交换机</text>
+    <rect class="node" x="720" y="166" width="110" height="44" rx="3"/><text class="nlab" x="775" y="192">监控中心平台</text>
+    <rect class="node" x="360" y="232" width="96" height="40" rx="3"/><text class="nlab" x="408" y="256">MPLS网络专线</text>
+    <rect class="node" x="472" y="232" width="100" height="40" rx="3"/><text class="nlab" x="522" y="256">收费站汇聚</text>
+    <rect class="node" x="586" y="232" width="100" height="40" rx="3"/><text class="nlab" x="636" y="256">隧道控制器</text>
+    <rect class="node" x="700" y="232" width="100" height="40" rx="3"/><text class="nlab" x="750" y="256">门架控制器</text>
+    <rect class="node" x="812" y="232" width="100" height="40" rx="3"/><text class="nlab" x="862" y="256">服务区汇聚</text>
+    <rect class="node" x="410" y="296" width="120" height="40" rx="3" stroke-dasharray="4 3"/><text class="nlab" x="470" y="320">收费站车道设备</text>
+    <rect class="node" x="546" y="296" width="120" height="40" rx="3" stroke-dasharray="4 3"/><text class="nlab" x="606" y="320">隧道机电设备</text>
+    <rect class="node" x="684" y="296" width="120" height="40" rx="3" stroke-dasharray="4 3"/><text class="nlab" x="744" y="320">门架与情报板</text>
+    <rect class="node" x="822" y="296" width="120" height="40" rx="3" stroke-dasharray="4 3"/><text class="nlab" x="882" y="320">服务区机电设备</text>
+  </g>
+
+  <!-- 中列：当前告警列表 -->
+  <rect class="panel" x="336" y="388" width="632" height="208"/>
+  <text class="pt" x="652" y="406">当前告警列表</text>
+  <rect class="th" x="348" y="416" width="608" height="22"/>
+  <text class="tht" x="432" y="431">告警名称</text>
+  <text class="tht" x="568" y="431">告警设备</text>
+  <text class="tht" x="686" y="431">告警等级</text>
+  <text class="tht" x="838" y="431">告警时长</text>
+  <line x1="512" y1="416" x2="512" y2="438" class="pl"/>
+  <line x1="624" y1="416" x2="624" y2="438" class="pl"/>
+  <line x1="748" y1="416" x2="748" y2="438" class="pl"/>
+  <g>
+    <rect class="rowM" x="348" y="440" width="608" height="24" opacity=".55"/>
+    <text class="rt" x="356" y="456">PLC主机获取数据失败</text><text class="rt" x="520" y="456">XBLJLS_2_PLC12</text>
+    <rect x="666" y="446" width="40" height="14" rx="2" fill="#c85a1c"/><text class="chipt" x="686" y="456">重要</text><text class="rt" x="800" y="456">00:05:30</text>
+    <rect class="rowN" x="348" y="464" width="608" height="24" opacity=".75"/>
+    <text class="rt" x="356" y="480">Nvr_通道异常</text><text class="rt" x="520" y="480">平安收费站NVR29</text>
+    <rect x="666" y="470" width="40" height="14" rx="2" fill="#26699f"/><text class="chipt" x="686" y="480">普通</text><text class="rt" x="800" y="480">00:05:56</text>
+    <rect class="rowN" x="348" y="488" width="608" height="24" opacity=".75"/>
+    <text class="rt" x="356" y="504">摄像机_无法获取数据告警</text><text class="rt" x="520" y="504">九台山隧道CA73</text>
+    <rect x="666" y="494" width="40" height="14" rx="2" fill="#26699f"/><text class="chipt" x="686" y="504">普通</text><text class="rt" x="800" y="504">00:13:13</text>
+    <rect class="rowN" x="348" y="512" width="608" height="24" opacity=".75"/>
+    <text class="rt" x="356" y="528">摄像机_无法获取数据告警</text><text class="rt" x="520" y="528">蓝田收费站值机(监控)</text>
+    <rect x="666" y="518" width="40" height="14" rx="2" fill="#26699f"/><text class="chipt" x="686" y="528">普通</text><text class="rt" x="800" y="528">00:20:13</text>
+    <rect class="rowM" x="348" y="536" width="608" height="24" opacity=".55"/>
+    <text class="rt" x="356" y="552">PLC主机获取数据失败</text><text class="rt" x="520" y="552">XBLJLS_3_PLC17</text>
+    <rect x="666" y="542" width="40" height="14" rx="2" fill="#c85a1c"/><text class="chipt" x="686" y="552">重要</text><text class="rt" x="800" y="552">00:25:50</text>
+    <rect class="rowU" x="348" y="560" width="608" height="24" opacity=".8"/>
+    <text class="rt" x="356" y="576">摄像机_离线告警</text><text class="rt" x="520" y="576">九连山隧道CA42</text>
+    <rect x="666" y="566" width="40" height="14" rx="2" fill="#c9303f"/><text class="chipt" x="686" y="576">紧急</text><text class="rt" x="800" y="576">00:45:13</text>
+  </g>
+  <text class="ax" x="652" y="590" font-size="9">（列表可滚动，新告警从顶部插入并高亮）</text>
+
+  <!-- 右列：告警等级数量分布 -->
+  <rect class="panel" x="980" y="116" width="276" height="248"/>
+  <text class="pt" x="1118" y="136">告警等级数量分布</text>
+  <line x1="1010" y1="146" x2="1226" y2="146" stroke="#2a6ea8" stroke-width=".7"/>
+  <g transform="rotate(-90 1118 212)">
+    <circle cx="1118" cy="212" r="58" fill="none" stroke="#ff8a1f" stroke-width="34" stroke-dasharray="229.6 364.4"/>
+    <circle cx="1118" cy="212" r="58" fill="none" stroke="#ff3b4e" stroke-width="34" stroke-dasharray="72.9 364.4" stroke-dashoffset="-229.6"/>
+    <circle cx="1118" cy="212" r="58" fill="none" stroke="#8f1b24" stroke-width="34" stroke-dasharray="61.9 364.4" stroke-dashoffset="-302.5"/>
+  </g>
+  <text x="1118" y="210" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">216</text>
+  <text x="1118" y="226" text-anchor="middle" fill="#a8c8ea" font-size="9.5">告警总数</text>
+  <g font-size="10.5" fill="#bdd6f0">
+    <rect x="1010" y="300" width="9" height="9" fill="#ff8a1f"/><text x="1025" y="308">普通 63%</text>
+    <rect x="1090" y="300" width="9" height="9" fill="#ff3b4e"/><text x="1105" y="308">重要 20%</text>
+    <rect x="1170" y="300" width="9" height="9" fill="#8f1b24"/><text x="1185" y="308">紧急 17%</text>
+    <rect x="1010" y="324" width="9" height="9" fill="#8fa3bb"/><text x="1025" y="332">提示 0%</text>
+    <text x="1090" y="332" fill="#6f8fae" font-size="9.5">（占比随时间实时刷新）</text>
+  </g>
+
+  <!-- 右列：过去 7 天 -->
+  <rect class="panel" x="980" y="374" width="276" height="222"/>
+  <text class="pt" x="1118" y="394">过去 7 天转采设备告警数量</text>
+  <line x1="1010" y1="404" x2="1226" y2="404" stroke="#2a6ea8" stroke-width=".7"/>
+  <g>
+    <text class="lab" x="1048" y="420">交换机</text><text class="valw" x="1054" y="420">1</text><rect class="track" x="1072" y="413" width="130" height="7"/><rect class="fillw" x="1072" y="413" width="3.6" height="7"/>
+    <text class="lab" x="1048" y="438">隧道PLC</text><text class="valw" x="1054" y="438">34</text><rect class="track" x="1072" y="431" width="130" height="7"/><rect class="fillw" x="1072" y="431" width="122.8" height="7"/>
+    <text class="lab" x="1048" y="456">隧道火大</text><text class="valw" x="1054" y="456">4</text><rect class="track" x="1072" y="449" width="130" height="7"/><rect class="fillw" x="1072" y="449" width="14.4" height="7"/>
+    <text class="lab" x="1048" y="474">电话广播</text><text class="valw" x="1054" y="474">16</text><rect class="track" x="1072" y="467" width="130" height="7"/><rect class="fillw" x="1072" y="467" width="57.8" height="7"/>
+    <text class="lab" x="1048" y="492">NVR</text><text class="valw" x="1054" y="492">8</text><rect class="track" x="1072" y="485" width="130" height="7"/><rect class="fillw" x="1072" y="485" width="28.9" height="7"/>
+    <text class="lab" x="1048" y="510">情报板</text><text class="valw" x="1054" y="510">4</text><rect class="track" x="1072" y="503" width="130" height="7"/><rect class="fillw" x="1072" y="503" width="14.4" height="7"/>
+    <text class="lab" x="1048" y="528">服务器</text><text class="valw" x="1054" y="528">4</text><rect class="track" x="1072" y="521" width="130" height="7"/><rect class="fillw" x="1072" y="521" width="14.4" height="7"/>
+    <text class="lab" x="1048" y="546">摄像机</text><text class="valw" x="1054" y="546">8</text><rect class="track" x="1072" y="539" width="130" height="7"/><rect class="fillw" x="1072" y="539" width="28.9" height="7"/>
+    <text class="lab" x="1048" y="564">电力监控</text><text class="valw" x="1054" y="564">25</text><rect class="track" x="1072" y="557" width="130" height="7"/><rect class="fillw" x="1072" y="557" width="90.3" height="7"/>
+    <text class="lab" x="1048" y="582">对讲终端</text><text class="valw" x="1054" y="582">1</text><rect class="track" x="1072" y="575" width="130" height="7"/><rect class="fillw" x="1072" y="575" width="3.6" height="7"/>
+  </g>
+  <line class="axl" x1="1072" y1="588" x2="1202" y2="588"/>
+  <text class="ax" x="1072" y="596">0</text><text class="ax" x="1091" y="596">5</text><text class="ax" x="1109" y="596">10</text><text class="ax" x="1128" y="596">15</text><text class="ax" x="1146" y="596">20</text><text class="ax" x="1165" y="596">25</text><text class="ax" x="1183" y="596">30</text><text class="ax" x="1202" y="596">35</text>
+
+  <text class="foot" x="24" y="700">● 采集链路正常　数据更新时间：00:00:00　告警等级图例：普通 / 重要 / 紧急　（按 F 全屏 · 按 2 切换告警监测页）</text>
+</svg>
