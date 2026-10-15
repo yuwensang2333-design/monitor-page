@@ -1,0 +1,102 @@
+# ============================================================
+#  高速公路机电系统运行状态智能监测平台 — 版本控制忽略规则
+#  原则：只提交源码（页面 / 样式 / 脚本 / 文档），
+#        系统文件、编辑器配置、依赖、构建产物、本地临时文件全部排除
+# ============================================================
+
+# ---------- macOS 系统文件 ----------
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.DocumentRevisions-V100
+Icon?
+*.icloud
+
+# ---------- Windows 系统文件 ----------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- 编辑器 / IDE ----------
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+.factorypath
+*~
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ---------- 依赖与构建产物 ----------
+node_modules/
+.pnpm-store/
+bower_components/
+dist/
+build/
+out/
+release/
+.cache/
+.parcel-cache/
+.vite/
+.nuxt/
+coverage/
+*.tsbuildinfo
+
+# ---------- Python（本地静态服务器 / 脚本） ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- 日志与临时文件 ----------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+*.pid
+
+# ---------- 本地环境与私有配置 ----------
+.env
+.env.*
+!.env.example
+*.local
+*.local.*
+local.settings.*
+.secrets/
+
+# ---------- 大屏演示 / 截图预览（本地产物，不入库） ----------
+preview/
+screenshots/
+captures/
+*.screencapture.png

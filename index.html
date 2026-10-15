@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>状态监测系统视图大屏 — 高速公路机电系统运行状态智能监测平台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2343d9ff' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%2343d9ff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/screen.css">
+</head>
+<body>
+
+<div class="backdrop">
+  <canvas class="stars" id="stars"></canvas>
+  <div class="glow-a"></div>
+  <div class="glow-b"></div>
+  <div class="grid"></div>
+  <div class="vignette"></div>
+</div>
+
+<div class="viewport">
+  <div class="stage" id="stage">
+
+    <!-- 顶部标题 -->
+    <header class="hdr">
+      <div class="hdr-wing left"></div>
+      <div class="hdr-banner">
+        <div class="hdr-plate">
+          <h1 class="hdr-title">状态监测系统视图大屏</h1>
+        </div>
+      </div>
+      <div class="hdr-wing right"></div>
+
+      <div class="hdr-actions right">
+        <a class="btn-nav" href="alarms.html">告警监测 ›</a>
+        <div class="hdr-status">
+          <span class="hdr-clock num" id="clock">--:--:--</span>
+          <span class="hdr-date" id="date">----</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 关键指标 -->
+    <section class="kpi-strip">
+      <div class="kpi">
+        <span class="kpi-label">总设备数：</span>
+        <span class="kpi-value num" id="kpiTotal">0</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">正常设备数：</span>
+        <span class="kpi-value num c-green" id="kpiNormal">0</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">告警设备数：</span>
+        <span class="kpi-value num c-red" id="kpiAlarm">0</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">告警率：</span>
+        <span class="kpi-value num c-cyan" id="kpiRate">0.00</span>
+        <span class="kpi-value unit c-cyan">%</span>
+      </div>
+    </section>
+
+    <!-- 主体 -->
+    <main class="board">
+
+      <!-- 左列 -->
+      <div class="col col-left">
+        <section class="panel">
+          <div class="panel-title">设备健康度</div>
+          <div class="panel-body"><div id="chartHealth" style="flex:1;display:flex;flex-direction:column;min-height:0"></div></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">设备分类数量图</div>
+          <div class="panel-body"><div id="chartCount" style="flex:1;display:flex;flex-direction:column;min-height:0"></div></div>
+        </section>
+      </div>
+
+      <!-- 中列 -->
+      <div class="col col-center">
+        <section class="panel topo-panel">
+          <div class="panel-body flush">
+            <div class="topo-stage">
+              <div class="topo-title">新博高速监控网</div>
+              <div class="topo-wrap" id="topo"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">当前告警列表</div>
+          <div class="panel-body flush">
+            <div class="alarm-grid">
+              <div class="alarm-head">
+                <span>告警名称<svg class="sort-mark" viewBox="0 0 9 12" fill="none"><path d="M4.5 0L9 5H0z" fill="rgba(190,225,255,.85)"/><path d="M4.5 12L0 7h9z" fill="rgba(90,160,230,.6)"/></svg></span>
+                <span>告警设备</span>
+                <span>告警等级</span>
+                <span>告警时长</span>
+              </div>
+              <div class="alarm-body scroll-area" id="alarmList"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 右列 -->
+      <div class="col col-right">
+        <section class="panel">
+          <div class="panel-title">告警等级数量分布</div>
+          <div class="panel-body">
+            <div class="pie-wrap">
+              <svg id="pieLevel"></svg>
+            </div>
+            <div class="pie-legend" id="pieLegend"></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">过去 7 天转采设备告警数量</div>
+          <div class="panel-body"><div id="chartWeek" style="flex:1;display:flex;flex-direction:column;min-height:0"></div></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 底部状态 -->
+    <footer class="screen-footer">
+      <div class="fo-left">
+        <span class="fo-item live-dot"><i></i>采集链路正常</span>
+        <span class="fo-item">数据更新时间：<b id="foUpdate">00:00:00</b></span>
+        <span class="fo-item legend-inline"><i style="background:#ff8a1f;box-shadow:0 0 8px #ff8a1f"></i>普通</span>
+        <span class="fo-item legend-inline"><i style="background:#ff3b4e;box-shadow:0 0 8px #ff3b4e"></i>重要</span>
+        <span class="fo-item legend-inline"><i style="background:#8f1b24;box-shadow:0 0 8px #8f1b24"></i>紧急</span>
+      </div>
+      <div class="fo-right">按 F 键全屏 · 按数字 2 切换告警监测页</div>
+    </footer>
+
+  </div>
+</div>
+
+<script src="assets/js/util.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/screen.js"></script>
+</body>
+</html>

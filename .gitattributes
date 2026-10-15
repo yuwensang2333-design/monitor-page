@@ -1,0 +1,25 @@
+# 统一按 LF 存储，避免 Windows / macOS 协作出换行符噪音
+* text=auto eol=lf
+
+# 明确二进制文件，禁止做行尾转换与文本 diff
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.bmp  binary
+*.woff  binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.eot  binary
+*.pdf  binary
+
+# 文档与源码按文本处理
+*.html text
+*.css  text
+*.js   text
+*.json text
+*.md   text
+*.svg  text
